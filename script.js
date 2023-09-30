@@ -7,15 +7,14 @@ function isValidInput(input) {
 }
 
 function startNewTimer() {
-  // let hoursInput = prompt("Enter hours:", "0");
-  // let minutesInput = prompt("Enter minutes:", "0");
-  // let secondsInput = prompt("Enter seconds:", "0");
-
   let hours = parseInt(prompt("Enter hours:", 0), 10);
   let minutes = parseInt(prompt("Enter minutes:", 0), 10);
   let seconds = parseInt(prompt("Enter seconds:", 0), 10);
-
-  if (isValidInput(hours) && isValidInput(minutes) && isValidInput(seconds)) {
+  if (
+    isValidInput(hours) != 0 &&
+    isValidInput(minutes) != 0 &&
+    isValidInput(seconds) != 0
+  ) {
     let totalSeconds = hours * 3600 + minutes * 60 + seconds;
 
     updateTimerDisplay(formatTime(totalSeconds));

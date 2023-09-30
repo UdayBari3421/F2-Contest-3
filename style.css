@@ -50,7 +50,7 @@ body {
 }
 
 .c-timer {
-    width: 50%;
+    width: 30%;
     display: flex;
     height: 43px;
     align-items: center;
@@ -99,6 +99,10 @@ body {
     width: 25%;
 }
 
+.timer {
+    border: 2px solid hotpink;
+}
+
 .timer-display {
     display: flex;
     align-items: center;
@@ -142,13 +146,19 @@ body {
     }
 
     .card {
+        gap: 20px;
         width: 50%;
     }
 
     .timer-display,
-    .total-time {
-
+    .total-time,
+    .card-text,
+    .btn {
         width: 100%;
+    }
+
+    .container {
+        width: 103%;
     }
 
     .btn {
@@ -157,5 +167,14 @@ body {
 
     .set-btn {
         min-width: 100px;
+    }
+
+    .after-zero-text {
+        padding: 0;
+    }
+
+    .timer {
+        gap: 20px;
+        width: 50%;
     }
 }
