@@ -128,3 +128,34 @@ body {
     font-weight: bold;
     color: #34344a;
 }
+
+
+@media screen and (max-width:1200px) {
+
+    .card,
+    .timer,
+    .card-text,
+    .btn {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card {
+        width: 50%;
+    }
+
+    .timer-display,
+    .total-time {
+
+        width: 100%;
+    }
+
+    .btn {
+        text-align: center;
+    }
+
+    .set-btn {
+        min-width: 100px;
+    }
+}
